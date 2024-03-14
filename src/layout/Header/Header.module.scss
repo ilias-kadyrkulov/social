@@ -1,0 +1,8 @@
+.header {
+    @apply py-1;
+    background-color: var(--color-background_content);
+
+    > div {
+        margin: 0 auto;
+    }
+}

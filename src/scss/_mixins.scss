@@ -1,0 +1,11 @@
+@mixin flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin authBlock {
+  padding: 20px;
+  margin-top: 18px;
+  background-color: var(--color-background_content);
+  border-radius: 10px;
+}

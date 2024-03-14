@@ -1,0 +1,52 @@
+@import '../../../scss/_mixins.scss';
+
+.sign_up_form {
+    @include flexColumn;
+    @apply mx-auto max-w-xs;
+
+    padding: 10px;
+
+    > input {
+        border-radius: 10px;
+        padding: 10px;
+        margin: 5px 0;
+        background-color: var(--color-background_secondary);
+        border: var(--border-primary);
+        color: var(--color-text_primary);
+
+        &::placeholder {
+            font-size: 0.7rem;
+        }
+    }
+
+    div {
+        display: flex;
+        align-items: center;
+        margin-top: 5px;
+
+        input[type='checkbox'] {
+            border-radius: 20px;
+            width: 15px;
+            height: 15px;
+        }
+
+        label {
+            font-size: 0.6rem;
+            color: var(--color-text_secondary);
+            font-weight: 400;
+            margin-left: 5px;
+        }
+    }
+
+    button {
+        @apply h-10 rounded-[10px] mt-5 bg-white text-sm;
+
+        &:hover {
+            opacity: 80%;
+        }
+    }
+
+    .error {
+        color: var(--color-text_error);
+    }
+}
